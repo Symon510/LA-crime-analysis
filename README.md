@@ -1,19 +1,28 @@
 # LA-crime-analysis
 
-Overview:
-This project explores a dataset of crime incidents to identify patterns in crime timing, geographic hotspots, and victim age groups. The analysis focuses on finding the peak crime hours, the area with the highest volume of night crimes, and the age brackets most frequently targeted.
+Overview : This repository explores a dataset of crime incidents to identify patterns in crime timings, geographic hotspots and victim age groups. The analysis focuses on finding the peak crime hours, the area with the highest volume of night crimes and the age brackets most frequently targeted.
 
-Data Preparation:
+Data Preparation :
 The dataset was loaded using pandas, with date columns (Date Rptd and DATE OCC) parsed into datetime objects.
 The TIME OCC column was treated as a string to extract the hour of occurrence (HOUR OCC), converted into an integer for analysis.
 
-Data Analysis:
-Peak Crime Hours:
+ ![image](https://github.com/user-attachments/assets/05c1ba72-2528-4022-bd7b-57cf0494a354)
 
-The first two digits of the TIME OCC field were extracted to represent the hour crimes occurred.
+
+Data Analysis:
+
+Peak Crime Hours : The first two digits of the TIME OCC field were extracted to represent the hour crimes occurred.
 A countplot revealed midday (12 PM) as the peak hour for crimes.
+
+![image](https://github.com/user-attachments/assets/0b941c39-ddf8-4bbf-989b-9a973f859753)
+
+
 Visualization:
-(Include a histogram or countplot showing crime frequency by hour.)
+
+![Figure_1](https://github.com/user-attachments/assets/f23fa36f-14e7-4288-bf86-3b5d2aea7a9a)
+
+
+
 Night Crime Hotspots:
 
 Night crimes were defined as those occurring between 10 PM and 3:59 AM.
